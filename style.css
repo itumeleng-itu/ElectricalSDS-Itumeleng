@@ -1,0 +1,41 @@
+body{
+    background-color: #141421;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    margin: auto;   
+    width:100vh;
+}
+.header,p {
+    text-align: center;
+    color: white;
+}
+.header{
+    background-color: rgba(37, 90, 136, 0.103);
+}
+.contents{
+    border:1px solid white;
+    border-radius: 10%;
+    margin: auto;
+    margin-top: 10vh;
+    width:65%;
+    p{
+        color:white;  
+        max-width: 80%;
+        margin: auto;
+    }
+    }
+
+.contents:hover{
+    background-color: rgba(241, 210, 210, 0.637);
+    transform: translateX(1.09);
+}
+
+@media only screen and (max-width: 760px) {
+  body {
+    background-color: rgb(6, 69, 90);
+  }
+}
