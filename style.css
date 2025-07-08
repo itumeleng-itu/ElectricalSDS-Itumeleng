@@ -26,16 +26,28 @@ body{
         color:white;  
         max-width: 80%;
         margin: auto;
+        font-weight: bolder;
     }
     }
 
 .contents:hover{
     background-color: rgba(241, 210, 210, 0.637);
-    transform: translateX(1.09);
+    transform: translateY(1rem);
 }
 
 @media only screen and (max-width: 760px) {
   body {
-    background-color: rgb(6, 69, 90);
+    background-color: rgb(4, 94, 124);
   }
+  .container{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    margin: auto;   
+    width:100vh;
+    }
+    .header,p {
+        text-align: center;
+        color: rgb(228, 217, 217);
+    }
 }
