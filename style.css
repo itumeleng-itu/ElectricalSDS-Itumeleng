@@ -9,7 +9,7 @@ body{
     margin: auto;   
     width:100vh;
 }
-.header,p {
+.header,h1 {
     text-align: center;
     color: white;
 }
@@ -27,17 +27,19 @@ body{
         max-width: 80%;
         margin: auto;
         font-weight: bolder;
+
     }
     }
 
 .contents:hover{
     background-color: rgba(241, 210, 210, 0.637);
     transform: translateY(1rem);
+    transform: rotateX('180deg');
 }
 
 @media only screen and (max-width: 760px) {
   body {
-    background-color: rgb(4, 94, 124);
+    background-color: radial-gradient(circle,rgba(67, 74, 107, 1) 24%, rgba(82, 55, 56, 1) 84%);;
   }
   .container{
     display: grid;
@@ -46,7 +48,7 @@ body{
     margin: auto;   
     width:100vh;
     }
-    .header,p {
+    .header,h1 {
         text-align: center;
         color: rgb(228, 217, 217);
     }
