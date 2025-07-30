@@ -1,55 +1,80 @@
 body{
     background-color: #141421;
     
-}
-.container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    text-align: center;
-    margin: auto;   
-    width:100vh;
-}
-.header,h1 {
-    text-align: center;
-    color: white;
-}
-.header{
-    background-color: rgba(37, 90, 136, 0.103);
-}
-.contents{
-    border:1px solid white;
-    border-radius: 10%;
-    margin: auto;
-    margin-top: 10vh;
-    width:65%;
-    p{
-        color:white;  
-        max-width: 80%;
-        margin: auto;
-        font-weight: bolder;
-
+    .header{
+        background-color: rgba(37, 90, 136, 0.103);
+        position: sticky;
+        h1 {
+            text-align: center;
+            color: white;
+        }
     }
-    }
-
-.contents:hover{
-    background-color: rgba(241, 210, 210, 0.637);
-    transform: translateY(1rem);
-    transform: rotateX('180deg');
-}
-
-@media only screen and (max-width: 760px) {
-  body {
-    background-color: radial-gradient(circle,rgba(67, 74, 107, 1) 24%, rgba(82, 55, 56, 1) 84%);;
-  }
-  .container{
-    display: grid;
-    grid-template-columns: auto auto;
-    text-align: center;
-    margin: auto;   
-    width:100vh;
-    }
-    .header,h1 {
+    .container{
+        display: grid;
+        grid-template-columns: auto auto auto;
         text-align: center;
-        color: rgb(228, 217, 217);
+        margin: auto;   
+        width:100vh;
+        .contents{
+            border:1px solid white;
+            border-radius: 10%;
+            margin: auto;
+            margin-top: 10vh;
+            width:65%;
+            p{
+                color:white;  
+                max-width: 80%;
+                margin: auto;
+                font-weight: bolder;
+
+            }
+        }
+        .contents:hover{
+            background-color: rgba(241, 210, 210, 0.637);
+            transform: translateY(1rem);
+            transform: rotateX('180deg');
+        }
     }
+}
+
+
+
+@media (max-width: 760px) {
+  body {
+    background-color: radial-gradient(circle,rgba(67, 74, 107, 1) 24%, rgba(82, 55, 56, 1) 84%);
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+        text-align: center;
+        margin: auto;   
+        width:auto;
+        }
+    .header{
+        h1 {
+                text-align: center;
+                color: rgb(228, 217, 217);
+                font-size: small;
+            }
+    }
+  }
+  
+}
+@media (min-width:761px) and (max-width: 1500px) {
+  body {
+    background-color: radial-gradient(circle,rgba(67, 74, 107, 1) 24%, rgba(82, 55, 56, 1) 84%);
+        .container{
+        display: grid;
+        grid-template-columns: auto auto;
+        text-align: center;
+        margin: auto;   
+        width:auto;
+        }
+        .header{
+            h1 {
+                text-align: center;
+                color: rgb(228, 217, 217);
+            }
+        }
+  }
+  
 }
